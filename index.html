@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+	<div class="calculator">
+        <div class="input-box">
+          <label for="num1">Antal kWh September 2021 till Oktober 2022</label>
+          <input type="number" id="num1" placeholder="Ange antal kWh" >
+        </div>
+        <div class="buttons">
+          <button onclick="calculate(0.50)">Elområde 3</button>
+          <button onclick="calculate(0.79)">Elområde 4</button>
+        </div>
+        <div class="input-box">
+          <label for="result">Förväntat elstöd</label>
+          <input type="number" id="result" placeholder="0 kr" min="1" oninput="validity.valid||(value='');">
+        </div>
+      </div>
+      
+</body>
+</html>
