@@ -52,16 +52,15 @@ form {
   margin-bottom: 10px;
 }
 
-label {
+.input-box label {
   font-size: 1.5em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-input[type="number"],
-input[type="text"] {
+input[type="number"] {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   padding: 10px;
   font-size: 1.5em;
   border: none;
@@ -69,11 +68,15 @@ input[type="text"] {
   background-color: #f9f9f9;
   text-align: center;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .input-box {
   text-align: center;
   margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
